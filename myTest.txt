@@ -1,0 +1,11 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 84E5-7039
+
+ Directory of C:\Users\rahul\-demo
+
+02/08/2016  00:28    <DIR>          .
+02/08/2016  00:28    <DIR>          ..
+02/08/2016  00:28                 0 myTest.txt
+02/08/2016  00:21                 7 README.md
+               2 File(s)              7 bytes
+               2 Dir(s)  81,346,859,008 bytes free
