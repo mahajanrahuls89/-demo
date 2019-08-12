@@ -22,6 +22,7 @@ then
 fi
 
 if [ $5 == 'false' ];
+then
         printf "\n=========2=========> sslenabled == false " >> director.txt
        ./configure.sh -s ${directorName}:${directorPort}
 fi
