@@ -10,7 +10,7 @@ cat director.txt >> /etc/hosts
 
 cd $INSTALLDIR
 
-tar xzf ./DSEngineLinux64.tar.gz
+
 
 cd ./datasynapse/engine
 
