@@ -192,12 +192,12 @@
 		"publisher": "Microsoft.OSTCExtensions",
 		"type": "CustomScriptForLinux",
 		"settings": {  
-			"fileUris": ["[uri('https://raw.githubusercontent.com/mahajanrahuls89/-demo/master/', 'ReconfigureEngine.sh')]"]
+			"fileUris": ["[uri('https://raw.githubusercontent.com/mahajanrahuls89/-demo/master/', 'ReconfigureEngine2.sh')]"]
 		},
 		"typeHandlerVersion": "1.5",
         "autoUpgradeMinorVersion": true,
 		"protectedSettings": {
-			"commandToExecute": "[concat('sh ./ReconfigureEngine.sh', ' ', parameters('directorhostname'), ' ', parameters('directorIP'), ' ', parameters('directorPort'), ' ', parameters('installFolder'), ' ', parameters('sslenabled'))]"
+			"commandToExecute": "[concat('sh ./ReconfigureEngine2.sh', ' ', parameters('directorhostname'), ' ', parameters('directorIP'), ' ', parameters('directorPort'), ' ', parameters('installFolder'), ' ', parameters('sslenabled'))]"
 		}
 	  }
     }
