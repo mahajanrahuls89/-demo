@@ -17,8 +17,10 @@ cd ./datasynapse/engine
 
 if [ "${sslenabled}" == "true" ]
 then
+    printf "\nsslenabled == true " >> director.txt
     ./configure.sh -s ${directorName}:${directorPort} -l y
 else
+    printf "\nsslenabled == false " >> director.txt
    ./configure.sh -s ${directorName}:${directorPort}
 fi
 
