@@ -10,11 +10,12 @@ cat director.txt >> /etc/hosts
 
 cd $INSTALLDIR
 
-
+printf "\n${directorIP} ${directorName}" >> director.txt
+printf "sslEnabled: ${sslenabled}" >> director.txt
 
 cd ./datasynapse/engine
 
-if [ "${sslenabled}" = "true"]
+if [ "$sslenabled" == "true"]
 then
     ./configure.sh -s ${directorName}:${directorPort} -l y
 else
