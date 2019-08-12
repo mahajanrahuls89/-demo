@@ -15,12 +15,14 @@ printf "sslEnabled: ${sslenabled}" >> director.txt
 
 cd ./datasynapse/engine
 sslenabled=$5
-if [ $5 == 'true' ]
+if [ $5 == 'true' ];
 then
-        printf "\n  ===================> sslenabled == true " >> director.txt
+        printf "\n  ========2===========> sslenabled == true " >> director.txt
       ./configure.sh -s ${directorName}:${directorPort} -l y
-else
-        printf "\n==================> sslenabled == false " >> director.txt
+fi
+
+if [ $5 == 'false' ];
+        printf "\n=========2=========> sslenabled == false " >> director.txt
        ./configure.sh -s ${directorName}:${directorPort}
 fi
 
