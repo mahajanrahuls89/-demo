@@ -14,7 +14,7 @@ cd $INSTALLDIR
 
 cd ./datasynapse/engine
 
-if [${sslenabled,,} = "true"]
+if ["${sslenabled}" = "true"]
 then
     ./configure.sh -s ${directorName}:${directorPort} -l y
 else
