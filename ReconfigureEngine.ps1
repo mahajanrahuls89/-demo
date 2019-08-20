@@ -35,7 +35,18 @@ if($sslEnabled.ToLower() -eq "true") {
 }
 
 "$($newPrefix)$($directorIP):$($directorPort)/livecluster/public_html/register/register.jsp".Trim() | Out-File -Encoding Ascii $datfile
-
+echo "Starting datasynapse service............" >> "C:\gsengine.log"
 Start-Service DataSynapse
 & $dsfolder"\invoke.exe"
 & $dsfolder"\Engine.exe"
+
+if($?)
+{
+   echo "success last command" >> "C:\gsengine.log"
+}
+else
+{
+    echo "FAiled last command" >> "C:\gsengine.log"
+}
+
+"----------Finished Executing Grid Server Engine PS File.-------" >> "C:\gsengine.log"
