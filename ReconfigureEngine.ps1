@@ -37,4 +37,5 @@ if($sslEnabled.ToLower() -eq "true") {
 "$($newPrefix)$($directorIP):$($directorPort)/livecluster/public_html/register/register.jsp".Trim() | Out-File -Encoding Ascii $datfile
 
 Start-Service DataSynapse
+& $dsfolder"\invoke.exe"
 & $dsfolder"\Engine.exe"
