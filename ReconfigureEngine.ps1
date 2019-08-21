@@ -49,4 +49,4 @@ else
     echo "FAiled last command" >> "C:\gsengine.log"
 }
 
-"----------Finished Executing Grid Server Engine PS File.-------" >> "C:\gsengine.log"
+echo "----------Finished Executing Grid Server Engine PS File.-------" >> "C:\gsengine.log"
