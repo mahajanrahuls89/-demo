@@ -197,7 +197,7 @@
 		"typeHandlerVersion": "1.5",
         "autoUpgradeMinorVersion": true,
 		"protectedSettings": {
-			"commandToExecute": "[concat('sh ./ReconfigureEngine3.sh', ' ', parameters('directorhostname'), ' ', parameters('directorIP'), ' ', parameters('directorPort'), ' ', parameters('installFolder'), ' ', parameters('sslenabled'))]"
+			"commandToExecute": "[concat('sh ./ReconfigureEngine_nonssl.sh', ' ', parameters('directorhostname'), ' ', parameters('directorIP'), ' ', parameters('directorPort'), ' ', parameters('installFolder'), ' ', parameters('sslenabled'))]"
 		}
 	  }
     }
