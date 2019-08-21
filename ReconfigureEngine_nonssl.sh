@@ -12,6 +12,6 @@ printf "\n${directorIP}  == ${directorName}" >> directorsss.txt
 
 printf "\n${directorPort}" >> directorsss.txt
 cd ./datasynapse/engine
-./configure.sh -s ${directorName}:${directorPort} -l y
+./configure.sh -s ${directorName}:8000 -l y
 
 ./engine.sh start
