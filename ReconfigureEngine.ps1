@@ -34,7 +34,7 @@ if($sslEnabled.ToLower() -eq "true") {
    $newPrefix="http://"
 }
 
-"$($newPrefix)$($directorIP):$($directorPort)/livecluster/public_html/register/register.jsp".Trim() | Out-File -Encoding Ascii $datfile
+"$($newPrefix)$($directorName):$($directorPort)/livecluster/public_html/register/register.jsp".Trim() | Out-File -Encoding Ascii $datfile
 echo "Starting datasynapse service............" >> "C:\gsengine.log"
 Start-Service DataSynapse
 & $dsfolder"\invoke.exe"
